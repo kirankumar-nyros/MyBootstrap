@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+  <title>flipkart</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+
+<div class="navbar navbar-default">
+
+	<div class="header">
+  
+      <button type = "button" class="navbar-toggle" data-toggle 
+      ="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <div class="container">
+      <a class="navbar-brand" href="http://www.flipkart.com/"> Flipkart Store</a>
+      <div class="active-collapse">
+        <ul class="nav nav-tabs">
+          <li><%= link_to "Browse Products", products_path %></li>
+          <li><%= link_to "Price List" %></li>
+          <li><%= link_to "Contact Us" %></li>
+          <li><%= link_to "Cart" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="span9"><%= yield %></div>
+    <div class="span3">
+      <h2>About Us</h2>
+      <p>Online shopping. You are doing it. Your neighbour is doing it. Your aunt is doing it. Everyone you know and don’t know is doing it. Online shopping is like going to a mall during a holiday season. Every day there is some sale or the other going on. And just like the mall you have almost every imaginable item available. </p>        
+    </div>
+  </div>
+</div>
+
+    <div class="panel panel-info">
+    	<div class="container-fluid">
+      <center><div class="panel-info">Designed, Developed and Maintained by Flipkart, Kakinadd-533001.
+Copyright © 2015 - 2025 Flipkart. All Rights Reserved.</div></center>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  prid: MyString
+  title: MyString
+  description: MyText
+  price: 9.99
+  quantity: 1
+  vat: 1
+  total: 9.99
+
+two:
+  prid: MyString
+  title: MyString
+  description: MyText
+  price: 9.99
+  quantity: 1
+  vat: 1
+  total: 9.99
